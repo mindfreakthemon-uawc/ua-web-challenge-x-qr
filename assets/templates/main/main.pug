@@ -1,0 +1,31 @@
+map('(select)'='onClick($event)')
+
+h4 Select points (you can click on the map)
+.container
+	.col-md-8
+		form
+			.form-group
+				label.custom-control.custom-radio
+					input.custom-control-input(type='radio', name='point', '[(ngModel)]'='point', value='A')
+					span.custom-control-indicator
+					span.custom-control-description Source (A)
+
+				select('[(ngModel)]'='geoPointA', name='geoPointA', '(ngModelChange)'='onGeoPointChange()')
+					option('*ngFor'='let geoPoint of geoPoints', '[ngValue]'='geoPoint', '[disabled]'='geoPointB === geoPoint') {{geoPoint.name}}
+
+			.form-group
+				label.custom-control.custom-radio
+					input.custom-control-input(type='radio', name='point', '[(ngModel)]'='point', value='B')
+					span.custom-control-indicator
+					span.custom-control-description Destination (B)
+
+				select('[(ngModel)]'='geoPointB', name='geoPointB', '(ngModelChange)'='onGeoPointChange()')
+					option('*ngFor'='let geoPoint of geoPoints', '[ngValue]'='geoPoint', '[disabled]'='geoPointA === geoPoint') {{geoPoint.name}}
+
+			button.btn.btn-primary('(click)'='searchRoutes()', '[disabled]'='!geoPointA || !geoPointB') Construct routes
+	.col-md-4('*ngIf'='impossible')
+		p.alert.alert-danger It's impossible to get from {{geoPointA.name}} to {{geoPointB.name}}
+	.col-md-4('*ngIf'='path')
+		p In order to get from {{geoPointA.name}} to {{geoPointB.name}} take this path:
+		ul
+			li('*ngFor'='let geoPoint of path') {{geoPoint.name}}

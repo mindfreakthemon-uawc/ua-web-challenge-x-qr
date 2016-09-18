@@ -1,0 +1,18 @@
+.container.m-t-1
+	.col-md-8
+		h1 GeoPoint List
+	.col-md-2
+		a.btn-block.btn.btn-primary(routerLink='/admin/geo-point/add') Add
+	.col-md-2
+		a.btn-block.btn.btn-warning('(click)'='exportArray()') Export
+
+ul.list-unstyled
+	li('*ngFor'='let geoPoint of geoPoints')
+		.card
+			.card-block
+				h4.cart-title {{geoPoint.name}}
+					| &nbsp;
+					a.btn.btn-sm.btn-danger(href='javascript://', '(click)'='deleteGeoPoint(geoPoint)') Delete
+			ul.list-group.list-group-flush
+				li.list-group-item LAT: {{geoPoint.lat}}
+				li.list-group-item LNG: {{geoPoint.lng}}

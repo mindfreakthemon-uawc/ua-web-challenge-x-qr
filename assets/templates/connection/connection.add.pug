@@ -1,0 +1,8 @@
+h1 Add new Connection sink
+form('(submit)'='onSubmit($event)')
+	.form-group
+		label From GeoPoint:
+		select('#geoPointSelect'='ngModel', '[(ngModel)]'='model.geoPointId', name='geoPoindId', required)
+			option('*ngFor'='let geoPoint of geoPoints', '[ngValue]'='geoPoint.id', '[disabled]'='isExistingConnection(geoPoint.id)') {{geoPoint.name}}
+
+	button.btn.btn-primary Submit

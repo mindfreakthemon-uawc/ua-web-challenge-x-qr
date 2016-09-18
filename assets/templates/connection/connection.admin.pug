@@ -1,0 +1,32 @@
+.container.m-t-1
+	.col-md-8
+		h1 Connection List
+	.col-md-2
+		a.btn-block.btn.btn-primary(routerLink='/admin/connection/add') Add
+	.col-md-2
+		a.btn-block.btn.btn-warning('(click)'='exportArray()') Export
+
+ul.list-unstyled
+	li('*ngFor'='let connection of connections')
+		.card
+			.card-block
+				h4.card-title {{findGeoPoint(connection.geoPointId)?.name}}
+					| &nbsp;
+					a.btn.btn-sm.btn-danger(href='javascript://', '(click)'='deleteConnection(connection)') Delete
+				.card-text
+					.alert.alert-danger('*ngIf'='!findGeoPoint(connection.geoPointId)') Broken connection
+
+				h6 Connected to:
+				ul.list-group.list-group-flush
+					li.list-group-item('*ngFor'='let geoPointId of connection.connections') {{findGeoPoint(geoPointId)?.name}}
+						a.btn.btn-sm.btn-danger.pull-right(href='javascript://', '(click)'='deleteGeoPointFrom(connection, geoPointId)') Delete
+
+				form('(submit)'='addGeoPointTo(connection, geoPointSelect)')
+					.form-group
+						label Add connection to:
+						select('#geoPointSelect'='ngModel', '[ngModel]'='', name='geoPointSelect', required)
+							option('*ngFor'='let geoPoint of geoPoints',
+									'[ngValue]'='geoPoint',
+									'[disabled]'='connection.connections.includes(geoPoint.id) || connection.geoPointId === geoPoint.id') {{geoPoint.name}}
+					button.btn.btn-primary Add
+

@@ -1,0 +1,411 @@
+[
+	{
+		"connections": [
+			1,
+			2
+		],
+		"id": 0,
+		"geoPointId": 0
+	},
+	{
+		"connections": [
+			0,
+			541442
+		],
+		"id": 1,
+		"geoPointId": 1
+	},
+	{
+		"connections": [
+			0,
+			3,
+			4
+		],
+		"id": 2,
+		"geoPointId": 2
+	},
+	{
+		"connections": [
+			2,
+			823279,
+			249624
+		],
+		"id": 3,
+		"geoPointId": 3
+	},
+	{
+		"connections": [
+			2,
+			6,
+			376004
+		],
+		"id": 4,
+		"geoPointId": 4
+	},
+	{
+		"connections": [
+			6,
+			945823,
+			823279
+		],
+		"id": 5,
+		"geoPointId": 5
+	},
+	{
+		"connections": [
+			5,
+			4,
+			718266
+		],
+		"id": 6,
+		"geoPointId": 6
+	},
+	{
+		"connections": [
+			625504,
+			3,
+			5
+		],
+		"geoPointId": 823279,
+		"id": 944307
+	},
+	{
+		"connections": [
+			823279,
+			63706
+		],
+		"geoPointId": 625504,
+		"id": 54706
+	},
+	{
+		"connections": [
+			625504,
+			536234
+		],
+		"geoPointId": 63706,
+		"id": 299459
+	},
+	{
+		"connections": [
+			63706,
+			695045
+		],
+		"geoPointId": 536234,
+		"id": 942057
+	},
+	{
+		"connections": [
+			4,
+			811072
+		],
+		"geoPointId": 376004,
+		"id": 778091
+	},
+	{
+		"connections": [
+			1,
+			728115
+		],
+		"geoPointId": 541442,
+		"id": 685622
+	},
+	{
+		"connections": [
+			541442,
+			504768
+		],
+		"geoPointId": 728115,
+		"id": 119389
+	},
+	{
+		"connections": [
+			728115,
+			124745
+		],
+		"geoPointId": 504768,
+		"id": 768986
+	},
+	{
+		"connections": [
+			504768,
+			558592,
+			558592
+		],
+		"geoPointId": 124745,
+		"id": 606613
+	},
+	{
+		"connections": [
+			992839,
+			124745
+		],
+		"geoPointId": 558592,
+		"id": 495294
+	},
+	{
+		"connections": [
+			558592,
+			872523
+		],
+		"geoPointId": 992839,
+		"id": 807111
+	},
+	{
+		"connections": [
+			992839
+		],
+		"geoPointId": 872523,
+		"id": 75463
+	},
+	{
+		"connections": [
+			376004,
+			130721
+		],
+		"geoPointId": 811072,
+		"id": 748153
+	},
+	{
+		"connections": [
+			811072
+		],
+		"geoPointId": 130721,
+		"id": 912405
+	},
+	{
+		"connections": [
+			5,
+			95028
+		],
+		"geoPointId": 945823,
+		"id": 304228
+	},
+	{
+		"connections": [
+			945823,
+			537718
+		],
+		"geoPointId": 95028,
+		"id": 178902
+	},
+	{
+		"connections": [
+			95028,
+			36557
+		],
+		"geoPointId": 537718,
+		"id": 228569
+	},
+	{
+		"connections": [
+			537718,
+			92377
+		],
+		"geoPointId": 36557,
+		"id": 906230
+	},
+	{
+		"connections": [
+			36557,
+			698363
+		],
+		"geoPointId": 92377,
+		"id": 917354
+	},
+	{
+		"connections": [
+			92377,
+			142584
+		],
+		"geoPointId": 698363,
+		"id": 83764
+	},
+	{
+		"connections": [
+			698363,
+			483191
+		],
+		"geoPointId": 142584,
+		"id": 890659
+	},
+	{
+		"connections": [
+			142584,
+			313630
+		],
+		"geoPointId": 483191,
+		"id": 257656
+	},
+	{
+		"connections": [
+			483191
+		],
+		"geoPointId": 313630,
+		"id": 278959
+	},
+	{
+		"connections": [
+			536234,
+			187462
+		],
+		"geoPointId": 695045,
+		"id": 61444
+	},
+	{
+		"connections": [
+			695045,
+			213705
+		],
+		"geoPointId": 187462,
+		"id": 740095
+	},
+	{
+		"connections": [
+			187462
+		],
+		"geoPointId": 213705,
+		"id": 65001
+	},
+	{
+		"connections": [
+			177429,
+			718266
+		],
+		"geoPointId": 906152,
+		"id": 344903
+	},
+	{
+		"connections": [
+			906152,
+			986179
+		],
+		"geoPointId": 177429,
+		"id": 961387
+	},
+	{
+		"connections": [
+			177429,
+			913249
+		],
+		"geoPointId": 986179,
+		"id": 467262
+	},
+	{
+		"connections": [
+			986179,
+			242145
+		],
+		"geoPointId": 913249,
+		"id": 783617
+	},
+	{
+		"connections": [
+			913249,
+			888286
+		],
+		"geoPointId": 242145,
+		"id": 355418
+	},
+	{
+		"connections": [
+			242145,
+			598932
+		],
+		"geoPointId": 888286,
+		"id": 510791
+	},
+	{
+		"connections": [
+			888286,
+			915955
+		],
+		"geoPointId": 598932,
+		"id": 84597
+	},
+	{
+		"connections": [
+			598932,
+			57208
+		],
+		"geoPointId": 915955,
+		"id": 419159
+	},
+	{
+		"connections": [
+			915955,
+			935961
+		],
+		"geoPointId": 57208,
+		"id": 910789
+	},
+	{
+		"connections": [
+			57208
+		],
+		"geoPointId": 935961,
+		"id": 811029
+	},
+	{
+		"connections": [
+			6,
+			906152
+		],
+		"geoPointId": 718266,
+		"id": 613123
+	},
+	{
+		"connections": [
+			3,
+			456310
+		],
+		"geoPointId": 249624,
+		"id": 234131
+	},
+	{
+		"connections": [
+			249624,
+			235850
+		],
+		"geoPointId": 456310,
+		"id": 408174
+	},
+	{
+		"connections": [
+			456310,
+			804409
+		],
+		"geoPointId": 235850,
+		"id": 609803
+	},
+	{
+		"connections": [
+			235850,
+			576563
+		],
+		"geoPointId": 804409,
+		"id": 767822
+	},
+	{
+		"connections": [
+			804409,
+			713288
+		],
+		"geoPointId": 576563,
+		"id": 207515
+	},
+	{
+		"connections": [
+			576563,
+			864711
+		],
+		"geoPointId": 713288,
+		"id": 771343
+	},
+	{
+		"connections": [
+			713288
+		],
+		"geoPointId": 864711,
+		"id": 350944
+	}
+]

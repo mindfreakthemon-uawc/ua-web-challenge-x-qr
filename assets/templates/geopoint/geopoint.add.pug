@@ -1,0 +1,19 @@
+h1 Add new GeoPoint
+form('(submit)'='onSubmit($event)')
+	.container
+		.col-xs-6
+			.form-group
+				label Name:
+				input.form-control(type='text', name='name', '[(ngModel)]'='model.name', required)
+
+			.form-group
+				label Coordinates (click on the map to set):
+				.input-group
+					.input-group-addon LNG
+					input.form-control(type='number', step='any', name='lng', '[(ngModel)]'='model.lng', required)
+					.input-group-addon LAT
+					input.form-control(type='number', step='any', name='lat', '[(ngModel)]'='model.lat', required)
+			button.btn.btn-primary Submit
+
+		.col-xs-6
+			map('(select)'='updateGeoPointCoordinates($event)')

@@ -1,0 +1,11 @@
+build/app
+build/vendor
+build/templates
+build/statics/images
+build/css
+typings
+node_modules
+*.log
+.idea
+*.iml
+

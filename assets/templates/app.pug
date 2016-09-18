@@ -1,0 +1,11 @@
+nav.navbar.navbar-light.bg-faded
+	ul.nav.navbar-nav
+		li.nav-item('routerLinkActive'='active', '[routerLinkActiveOptions]'='{exact: true}')
+			a.nav-link('routerLink'='') Home
+		li.nav-item('routerLinkActive'='active')
+			a.nav-link('routerLink'='/admin/geo-point') GeoPoint Admin
+		li.nav-item('routerLinkActive'='active')
+			a.nav-link('routerLink'='/admin/connection') Connection Admin
+
+.container
+	router-outlet
