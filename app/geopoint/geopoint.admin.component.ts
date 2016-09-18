@@ -7,8 +7,7 @@ import { download } from '../utils/download.util';
 
 @Component({
 	selector: 'geo-point-admin',
-	templateUrl: 'build/templates/geopoint/geopoint.admin.html',
-	directives: [MapComponent, GeoPointAddComponent]
+	templateUrl: 'build/templates/geopoint/geopoint.admin.html'
 })
 export class GeoPointAdminComponent {
 	@Output()

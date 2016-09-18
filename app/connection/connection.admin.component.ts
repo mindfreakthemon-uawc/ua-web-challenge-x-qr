@@ -9,8 +9,7 @@ import { download } from '../utils/download.util';
 
 @Component({
 	selector: 'connection-admin',
-	templateUrl: 'build/templates/connection/connection.admin.html',
-	directives: [ConnectionAddComponent]
+	templateUrl: 'build/templates/connection/connection.admin.html'
 })
 export class ConnectionAdminComponent {
 	connections: Connection[];

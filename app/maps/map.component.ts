@@ -1,8 +1,8 @@
-import { Component, ElementRef, Output, EventEmitter, Input, NgZone } from '@angular/core';
+import { Directive, ElementRef, Output, EventEmitter, Input, NgZone } from '@angular/core';
+import 'google-maps';
 
-@Component({
-	selector: 'map',
-	template: ''
+@Directive({
+	selector: 'map'
 })
 export class MapComponent {
 	map: google.maps.Map;

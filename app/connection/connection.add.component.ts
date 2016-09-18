@@ -7,8 +7,7 @@ import { ConnectionService } from './connection.service';
 
 @Component({
 	selector: 'connection-add',
-	templateUrl: 'build/templates/connection/connection.add.html',
-	directives: [MapComponent]
+	templateUrl: 'build/templates/connection/connection.add.html'
 })
 export class ConnectionAddComponent {
 	model = new Connection();
