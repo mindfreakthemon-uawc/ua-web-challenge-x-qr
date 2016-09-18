@@ -16,7 +16,7 @@ export class GeoPointService {
 			return Promise.resolve(this.cache);
 		}
 
-		return this.http.get('/build/statics/json/geopoint.json')
+		return this.http.get('build/statics/json/geopoint.json')
 			.toPromise()
 			.then((response) => response.json())
 			.then((array) => {
